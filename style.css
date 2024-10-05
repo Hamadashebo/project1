@@ -1,0 +1,770 @@
+.navbar{
+    height: 60px;
+    
+}
+.navbar .left-div img{
+    height: 40px;
+    width: 100px;
+    margin-left: 60px;
+    
+}
+.navbar .middle-div ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.navbar .middle-div i {
+    display: none;
+}
+.navbar .middle-div ul li a{
+    text-decoration: none;
+    color: black;
+    transition: all ease .5s;
+    padding: 10px;
+    
+}
+.navbar .middle-div ul li a:hover{
+    text-decoration: underline;
+    background-color: black;
+    color: white;
+    
+    border-radius: 5px ;
+}
+.navbar .right-div button{
+  margin-right: 60px;
+  padding: 4px;
+  border-radius: 6px;
+  color: white;
+  background-color: black;
+}
+.navbar .right-div button:hover{
+    background-color: gray;
+}
+@media only screen and (max-width: 560px) {
+    .navbar .middle-div ul{
+        display: none;
+        list-style: none;
+        justify-content: center;
+        gap: 60px;
+        margin-top: 10px;
+    }
+    .navbar .middle-div i {
+        display:block;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .navbar .middle-div i:hover{
+        transform: scale(1.1)
+    }
+    .navbar .right-div button{
+        margin-right: 5px;
+    }
+    .navbar .right-div button:hover{
+        background-color: gray;
+    }
+    
+    .navbar .left-div img{
+        margin-left: 5px;
+    }
+ }
+@media only screen and (min-width: 560px) and (max-width: 800px){
+    .navbar .middle-div ul{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 10px;
+    }
+    .navbar .middle-div i {
+        display:none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    .navbar .right-div button{
+        margin-right: 5px;
+    }
+    .navbar .right-div button:hover{
+        background-color: gray;
+    }
+    
+    .navbar .left-div img{
+        margin-left: 5px;
+    }
+}
+.up-div{
+ display:flex;
+ justify-content: space-around;
+}
+.up-div .text p{
+ width: 650px;
+ margin-top: 30px;
+ font-size: 20px;
+ color: rgba(0, 0, 0, 0.575);
+}
+.up-div .text h1{
+    font-size: 100px;
+}
+.up-div img{
+    width: 330px;
+    height: auto;
+}
+.down-div {
+    display: flex;
+    justify-content: space-around;
+}
+.down-div .left{
+margin-left: 50px;
+}
+.down-div .left button{
+    background-color: black;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    width: 200px;
+    padding: 20px;
+    margin-left: 70px;
+    
+}
+.down-div .left .counts{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    margin-top: 130px;
+    
+}
+.down-div .left .counts div p{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.749);
+}
+.down-div .left .counts div h3{
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.87);
+}
+.down-div .right .base-img{
+    width: 450px;
+    position: relative;
+}
+.down-div .right .f-img{
+ width: 250px;
+ position: absolute;
+ top: 57%;
+ left: 49%;
+}
+.down-div .right .s-img{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 48%;
+    right: 10%;
+}
+.down-div .right .fa-regular{
+    font-size: 280px;
+    width: 100px;
+    font-weight: 50px; 
+}
+@media only screen and (max-width: 560px){
+    .up-div{
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+       }
+       .up-div .text p{
+        width: 280px;
+        margin-top: 30px;
+        font-size: 15px;
+        color: rgba(0, 0, 0, 0.575);
+        
+       }
+       .up-div .text h1{
+           font-size: 80px;
+       }
+       .up-div img{
+           width: 300px;
+           height: auto;
+           margin-left: 30px;
+       }
+       .down-div {
+           display: flex;
+           justify-content: space-around;
+           flex-wrap: wrap;
+       }
+       .down-div .left{
+       margin-left: 1px;
+       }
+       .down-div .left button{
+           background-color: black;
+           color: white;
+           border: 0px;
+           border-radius: 5px;
+           width: 200px;
+           margin-top: 40px;
+           margin-right: 50px;
+           
+       }
+       .down-div .left .counts{
+           display: flex;
+           justify-content: space-evenly;
+           gap: 30px;
+           margin-top: 130px;
+           
+       }
+       .down-div .left .counts div p{
+           font-size: 10px;
+           color: rgba(0, 0, 0, 0.749);
+       }
+       .down-div .left .counts div h3{
+           font-size: 20px;
+           color: rgba(0, 0, 0, 0.87);
+       }
+       .down-div .right{
+        margin-top: 40px;
+        margin-left: 5px;
+       }
+       .down-div .right .base-img{
+           width: 280px;
+           position: relative;
+           margin-left: 8px;
+           margin-top: 30px;
+       }
+       .down-div .right .f-img{
+        width: 150px;
+        position: absolute;
+        top: 157%;
+        left: -6%;
+       }
+       .down-div .right .s-img{
+           width: 100px;
+           height: 100px;
+           position: relative;
+           top: 55%;
+           right: 13%;
+       }
+       .down-div .right .fa-regular{
+           font-size: 280px;
+           width: 100px;
+           font-weight: 50px; 
+       }
+}
+
+@media only screen and (min-width: 560px) and (max-width: 800px){
+    
+.up-div{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   }
+   .up-div .text p{
+    width: 600px;
+    margin-top: 30px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.575);
+   }
+   .up-div .text h1{
+       font-size: 80px;
+   }
+   .up-div img{
+       width: 330px;
+       height: auto;
+       margin-left: 60px;
+   }
+   .down-div {
+       display: flex;
+       justify-content: space-around;
+       flex-wrap: wrap;
+   }
+   .down-div .left{
+   margin-left: 50px;
+   }
+   .down-div .left button{
+       background-color: black;
+       color: white;
+       border: 0px;
+       border-radius: 5px;
+       width: 200px;
+       padding: 20px;
+       margin-left: 150px;
+       
+   }
+   .down-div .left .counts{
+       display: flex;
+       justify-content: space-evenly;
+       gap: 0px;
+       margin-top: 130px;
+       margin-right: 190px;
+       margin-bottom: 60px;
+       
+   }
+   .down-div .left .counts div p{
+       font-size: 13px;
+       color: rgba(0, 0, 0, 0.749);
+   }
+   .down-div .left .counts div h3{
+       font-size: 20px;
+       color: rgba(0, 0, 0, 0.87);
+   }
+   .down-div .right{
+    margin-top: 70px;
+   }
+   .down-div .right .base-img{
+       width: 450px;
+       position: relative;
+       margin-left: 50px;
+   }
+   .down-div .right .f-img{
+    width: 250px;
+    position: absolute;
+    top: 140%;
+    left: -1%;
+   }
+   .down-div .right .s-img{
+       width: 150px;
+       height: 150px;
+       position: relative;
+       top: 48%;
+       right: 10%;
+   }
+   .down-div .right .fa-regular{
+       font-size: 280px;
+       width: 100px;
+       font-weight: 50px; 
+   }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1021px){
+    
+    .up-div{
+        display:flex;
+        justify-content: space-around;
+        
+       }
+       .up-div .text p{
+        width: 500px;
+        margin-top: 30px;
+        font-size: 15px;
+        color: rgba(0, 0, 0, 0.575);
+       }
+       .up-div .text h1{
+           font-size: 80px;
+       }
+       .up-div img{
+           width: 270px;
+           height: auto;
+           margin-left: 60px;
+       }
+       .down-div {
+           display: flex;
+           justify-content: space-around;
+           
+       }
+       
+       .down-div .left button{
+           background-color: black;
+           color: white;
+           border: 0px;
+           border-radius: 5px;
+           width: 200px;
+           padding: 20px;
+          
+        
+           
+       }
+       .down-div .left .counts{
+           display: flex;
+           justify-content: space-evenly;
+           
+           margin-top: 130px;
+           margin-right: 190px;
+           
+           
+       }
+       .down-div .left .counts div p{
+           font-size: 12px;
+           color: rgba(0, 0, 0, 0.749);
+       }
+       .down-div .left .counts div h3{
+           font-size: 20px;
+           color: rgba(0, 0, 0, 0.87);
+       }
+       .down-div .right{
+        margin-top: 70px;
+       }
+       .down-div .right .base-img{
+           width: 200px;
+           position: relative;
+           height: 200px;
+           
+       }
+       .down-div .right .f-img{
+        width: 200px;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+       }
+       .down-div .right .s-img{
+           width: 100px;
+           height: 100px;
+           position: relative;
+           top: 60%;
+           right: 10%;
+       }
+       .down-div .right .fa-regular{
+           font-size: 280px;
+           width: 100px;
+           font-weight: 50px; 
+       }
+    }
+    @media only screen and (min-width: 1021px) and (max-width:1440px){
+        .up-div{
+            display:flex;
+            justify-content: space-around;
+           }
+           .up-div .text p{
+            width: 650px;
+            margin-top: 30px;
+            font-size: 20px;
+            color: rgba(0, 0, 0, 0.575);
+           }
+           .up-div .text h1{
+               font-size: 100px;
+           }
+           .up-div img{
+               width: 330px;
+               height: auto;
+           }
+           .down-div {
+               display: flex;
+               justify-content: space-around;
+           }
+           .down-div .left{
+           
+           }
+           .down-div .left button{
+               background-color: black;
+               color: white;
+               border: 0px;
+               border-radius: 5px;
+               width: 200px;
+               padding: 20px;
+               margin-left: 70px;
+               
+           }
+           .down-div .left .counts{
+               display: flex;
+               justify-content: space-evenly;
+               gap: 50px;
+               margin-top: 130px;
+               
+           }
+           .down-div .left .counts div p{
+               font-size: 16px;
+               color: rgba(0, 0, 0, 0.749);
+           }
+           .down-div .left .counts div h3{
+               font-size: 30px;
+               color: rgba(0, 0, 0, 0.87);
+           }
+           .down-div .right .base-img{
+               width: 450px;
+               position: relative;
+           }
+           .down-div .right .f-img{
+            width: 250px;
+            position: absolute;
+            top: 70%;
+            left: 49%;
+           }
+           .down-div .right .s-img{
+               width: 150px;
+               height: 150px;
+               position: relative;
+               top: 48%;
+               right: 10%;
+           }
+           .down-div .right .fa-regular{
+               font-size: 280px;
+               width: 100px;
+               font-weight: 50px; 
+           }
+    }
+    .services {
+        display: flex;
+        justify-content: space-around;
+    }
+    .section2{
+        margin-top: 90px;
+    }
+    .section2 .up-div1 .text1{
+        gap: 30px;
+        margin-bottom: 40px;
+
+    }
+    .section2 .up-div1 .text1 h2{
+        font-size: 30px;
+        
+    }
+    .section2 .up-div1 .text1 img{
+        margin-top: 10px;
+    }
+    .section2 .down-div1 .divv1{
+        margin-top: 15px;
+    }
+    .section2 .down-div1 .divv1 .text2 p{
+        width: 240px;
+        margin-top: 25px;
+        color: rgba(0, 0, 0, 0.784);
+        
+    }
+    @media only screen and (max-width: 475px){
+        .section2 .down-div1 .divv1 .text2 p{
+            width: 200px;
+            margin-top: 25px;
+            color: rgba(0, 0, 0, 0.784);
+            
+        }
+    }
+   .section3{
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    gap: 300px;
+   } 
+   .section3 .div1 .div-l1 img{
+        width: 430px;
+        height: 500px;
+        margin-bottom: 15px;
+   }
+   .section3 .div1 .div-r1 {
+    line-height: 20px;
+    margin-bottom: 25px;
+    
+   }
+   .section3 .div1 .div-r1 h1{
+    margin-bottom: 40px;
+   }
+   .section3 .div1 .div-r1 p{
+    width: 450px;
+    color: rgba(0, 0, 0, 0.784);
+    margin-bottom: 40px;
+   }
+   .section3 .div1 .div-r1 .text3{
+    display: flex;
+    justify-content: space-between;
+   }
+   .section3 .div1 .div-r1 .text3 p {
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: black;
+   }
+   .section3 .div1 .div-r1 .text3 i{
+   
+    font-size: 25px;
+   }
+   .section3 .div1 .div-r1 button{
+    border: 0px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    margin-top: 30px;
+    width: 150px;
+    height: 50px;
+   }
+   @media only screen and (max-width: 475px) {
+    .section3 .div1 .div-l1 img{
+        width: 270px;
+        height: 300px;
+        margin-bottom: 40px;
+   }
+   .section3 .div1 .div-r1 p{
+    width: 300px;
+    color: rgba(0, 0, 0, 0.784);
+    margin-bottom: 40px;
+   }
+   }
+   .section4 {
+    margin-top: 70px;
+   }
+   .section4 h1{
+    width: 500px;
+   }
+   .section4 .divv2{
+    display: flex;
+    margin-top: 50px;
+   }
+   
+   .section4 .divv2 div i{
+    margin-right: 25px;
+    font-size: 30px;
+    margin-top: 10px;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    padding: 10px;
+   }
+   .section4 .divv2 div p{
+    width: 340px;
+    color: rgba(0, 0, 0, 0.784);
+   }
+   .section4 .img1 img{
+    width: 500px;
+    height: 700px;
+   }
+   @media only screen and (max-width: 475px){
+    .section4 .divv2 div p{
+        width: 230px;
+        color: rgba(0, 0, 0, 0.784);
+       }
+       .section4 h1{
+        width: 300px;
+       }
+       .section4 .img1 img{
+        margin-top: 30px;
+        width: 300px;
+        height: 450px;
+       }
+
+   }
+   .section5 {
+    margin-top: 100px;
+   }
+   .section5 .div-l2 img{
+    width: 500px;
+    height: 500px;
+   }
+   .section5 .div-l2 .button{
+    margin-top: 15px;
+    margin-bottom: 10px;
+   }
+   .section5 .div-l2 .button button {
+    border: 0px;
+    padding: 5px;
+    width: 50px;
+    margin-right: 15px;
+   }
+   .section5 .div-l2 .button button i{
+    color: rgba(0, 0, 0, 0.741);
+    font-size: 20px;
+   }
+   .section5 .div-r2 .divv3{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    position: relative;
+    right: 70%;
+    
+   }
+   .section5 .div-r2  h1{
+    width: 450px;
+   }
+   .section5 .div-r2 .divv3 .Customers{
+    background-color: rgba(0, 0, 0, 0.764);
+    color: white;
+    margin-top: 60px;
+    padding: 25px;
+    margin-right: 40px;
+    position: relative;
+    width: 500px;
+    height: 350px;
+    
+    
+   }
+   .section5 .div-r2 .divv3 .Customers i{
+    margin-bottom: 30px;
+    font-size: 20px;
+   }
+   .section5 .div-r2 .divv3 .Customers p{
+    width: 300px;
+    margin-bottom: 30px;
+   }
+   .section5 .div-r2 .divv3 .Customers .text4 {
+    margin-left: 15px;
+   }
+   .section5 .div-r2 .divv3 .Customers .text4 p{
+    margin-top: 3px;
+   }
+   .section6{
+    margin-top: 80px;
+   }
+   .section6 .divv4 .div4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   }
+   .section6 .divv4 .div4 h1{
+    width: 550px;
+    margin-bottom: 40px;
+    font-size: 40px;
+   }
+   .section6 .divv4 .div4 p{
+    width: 550px;
+    font-size: 20px;
+    margin-bottom: 40px;
+   }
+   .section6 .divv4 .div4 form{
+    background-color: white;
+    width: 600px;
+    padding: 10px;
+    text-align: justify;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 4px .5px rgba(128, 128, 128, 0.679);
+    position: relative;
+    top: 10%;
+   }
+   .section6 .divv4 .div4 form input{
+    border: 0px;
+    margin-left: 18px;
+    width: 400px;
+   }
+   .section6 .divv4 .div4 button{
+    border: 0px;
+    padding: 10px;
+    width: 100px;
+    margin-left: 5px;
+    background-color: black;
+    color: white;
+   }
+   .footer {
+    background-color: black;
+    width: 100%;
+    padding: 50px;
+   }
+   .footer .foot1{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 70px;
+   }
+   .footer .foot1 img{
+    width: 140px;
+    height: 50px;
+    margin-bottom: 20px;
+    color: white;
+   }
+   .footer .foot1 .links{
+    background-color: rgba(0, 0, 0, 0.759);
+    color: white;
+   
+    
+   }
+   .footer .foot1 .links i{
+    margin: 5px;
+   }
+   .footer .foot1 p{
+    color: white;
+   }
+   .footer .foot1 h3{
+    color: white;
+    margin-bottom: 20px;
+   }
+   .footer .foot1 a{
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+    
+   }
+   
